@@ -23,7 +23,7 @@
                 "background": {
                     "activeOnStart": true,
                     "beginsPattern": "> find-me@0.1.0 dev",
-                    "endsPattern": " ✓ Ready in"
+                    "endsPattern": "> Server listening at https://localhost:3000"
                 }
             }
         }
