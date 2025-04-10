@@ -5,7 +5,7 @@ import fs from "fs";
 
 const port = parseInt(process.env.PORT || '3000', 10);
 const dev = process.env.NODE_ENV !== 'production';
-const app = next({ conf: {}, turbo: true, dev });
+const app = next({ turbo: true, dev });
 const handle = app.getRequestHandler();
 const httpOptions = {
     key: fs.readFileSync('./certs/server_key.pem'),
