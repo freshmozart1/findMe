@@ -1,16 +1,14 @@
 {
-    // Verwendet IntelliSense zum Ermitteln möglicher Attribute.
-    // Zeigen Sie auf vorhandene Attribute, um die zugehörigen Beschreibungen anzuzeigen.
-    // Weitere Informationen finden Sie unter https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "chrome",
+            "name": "Run dev",
+            "type": "node",
             "request": "launch",
-            "name": "Chrome mit \"localhost\" starten",
-            "url": "https://localhost:3000",
-            "preLaunchTask": "npm: dev",
-            "webRoot": "${workspaceFolder}"
+            "runtimeExecutable": "node",
+            "program": "${workspaceFolder}/server.mjs",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "openOnSessionStart"
         }
     ]
 }
